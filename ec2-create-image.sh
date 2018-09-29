@@ -9,9 +9,9 @@
 #
 
 DATE=$(date +%m-%d-%Y) 
-AMI_NAME="EMR-WEB-BACKUP_${DATE}"
-AMI_DESCRIPTION="Backup of our open emr web server - $DATE"
-INSTANCE_ID=i-04aa0b72205235e99
+AMI_NAME="$1"
+AMI_DESCRIPTION="Backup of server - $DATE"
+INSTANCE_ID=$2
 
 printf "Requesting AMI for instance $INSTANCE_ID...\n"
 printf "New ami: $AMI_NAME; From instance id: $INSTANCE_ID...\n"
