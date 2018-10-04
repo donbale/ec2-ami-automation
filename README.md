@@ -6,4 +6,4 @@ Two scripts to add to your crontab.
 ## Notes
 - If you are not using an ubuntu os you may need to change your use of date to: __PASTDUE=$(date -v -3d "+%Y-%m-%d").
 
-- Change '3d' to whatever length of time you want. If you can afford to keep snapshots associated with 10 Amazon machine images, then change to __PASTDUE=$(date -v -10d "+%Y-%m-%d")
+- Change '3d' to whatever length of time you want. If you can afford to keep snapshots associated with 10 Amazon machine images, then change to __PASTDUE=$(date -v -10d "+%Y-%m-%d") or __PASTDUE=$(date --date="4 days ago" +"%Y-%m-%d"), for ubuntu
