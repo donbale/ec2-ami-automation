@@ -7,6 +7,8 @@
 ## Notes
 - To use this script you must have the AWS CLI installed on the device that will run the script: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html and configured: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
 
+- For del-snapshots.sh, you must have you account number for the owners parameter. From the aws console, select support center from the top right corner of the dashboard. When the page loads, your account number/owner id will be at the top of the page.
+
 - If you are not using an ubuntu os you may need to change your use of date to: __PASTDUE=$(date -v -3d "+%Y-%m-%d").
 
 - Change '3d' to whatever length of time you want. If you can afford to keep snapshots associated with 10 Amazon machine images, then change to __PASTDUE=$(date -v -10d "+%Y-%m-%d"); or __PASTDUE=$(date --date="10 days ago" +"%Y-%m-%d"), for ubuntu.
