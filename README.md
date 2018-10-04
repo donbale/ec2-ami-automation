@@ -1,7 +1,8 @@
 # ec2-ami-automation
-Two scripts to add to your crontab. 
-1. ec2-create-image.sh: Creates a full amazon machine image from a currently running instance. 
-2. del-snapshots.sh: Deregisters all amazon images that are older than a date D and then deletes all snapshots that are older than D (Amazon charges you for storage of snapshots, so you want to clean these up. There is no charge for having AMI's but they must be deregistered before deleting their associated snapshots)
+
+-Two scripts to add to your crontab. 
+  1. ec2-create-image.sh: Creates a full amazon machine image from a currently running instance. 
+  2. del-snapshots.sh: Deregisters all amazon images that are older than a date D and then deletes all snapshots that are older than D    (Amazon charges you for storage of snapshots, so you want to clean these up. There is no charge for having AMI's but they must be   deregistered before deleting their associated snapshots)
 
 ## Notes
 - To use this script you must have the AWS CLI installed on the device that will run the script: https://docs.aws.amazon.com/cli/latest/userguide/awscli-install-linux.html and configured: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html
